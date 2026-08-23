@@ -1,0 +1,64 @@
+generated: '2026-08-23'
+method: probed
+source: live probes of every Kiddom host (www, api, app, support, status)
+note: >-
+  No /.well-known/ document is served on any Kiddom host. www.kiddom.co (Webflow) answers every
+  /.well-known/* path with an 88-byte HTML page reading "Invalid .well-known request" under a 404
+  status; api.kiddom.co answers "404 page not found" (Go mux); app.kiddom.co is a single-page-app
+  catch-all that returns HTTP 200 with the same 43,798-byte React shell for EVERY path, including
+  invented ones, so its 200s are NOT documents and were rejected. No WellKnown or SecurityTxt
+  pointer is emitted — this file records an absence.
+hit_count: 0
+soft_404_control:
+  host: https://app.kiddom.co
+  path: /.well-known/this-path-does-not-exist-probe
+  status: 200
+  bytes: 43798
+  verdict: catch-all SPA shell; identical body returned for every probed path
+hosts:
+- host: https://www.kiddom.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://api.kiddom.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://app.kiddom.co
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    rejected: soft-200 SPA shell (text/html, 43798 bytes, identical to control probe)
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    rejected: soft-200 SPA shell (text/html, 43798 bytes, identical to control probe)
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    rejected: soft-200 SPA shell (text/html, 43798 bytes, identical to control probe)

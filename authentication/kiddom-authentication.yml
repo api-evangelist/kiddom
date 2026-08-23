@@ -1,0 +1,56 @@
+generated: '2026-08-23'
+method: searched
+source: https://support.kiddom.co/en/collections/19663428-rostering-and-integrations
+docs: https://get.kiddom.co/rostering-and-integrations/
+note: >-
+  Nothing here is derived from a spec — Kiddom publishes no OpenAPI, so derive-authentication.py
+  has no input. This profile is assembled from the 1EdTech certification record, the help center's
+  integration articles, and live probes. There is no API key, no developer signup, and no token
+  endpoint: authentication into Kiddom is federated from the district's identity/rostering
+  provider, and machine-to-machine authentication happens inside the LTI 1.3 launch.
+summary:
+  types:
+  - openIdConnect
+  api_key_in: []
+  oauth2_flows: []
+  developer_credentials: none-published
+schemes:
+- name: LTI 1.3 OIDC third-party-initiated login
+  type: openIdConnect
+  role: tool
+  source: https://site.imsglobal.org/certifications/kiddom-inc/kiddom
+  endpoints:
+    login: https://api.kiddom.co/lti/login
+    launch: https://api.kiddom.co/lti/launch
+  detail: >-
+    An LMS platform initiates the launch; Kiddom validates the platform's signed id_token against
+    the platform's JWKS and the deployment registration. Kiddom's own tool key set, client_id and
+    deployment_id are provisioned per district by Kiddom support and are NOT published — no
+    /lti/jwks, /jwks.json or /.well-known/lti-configuration is served (all 404 on api.kiddom.co).
+  services:
+  - Assignment and Grade Services 2.0 (grade passback to the LMS gradebook)
+  - Names and Role Provisioning Services 2.0
+  - Deep Linking 2.0
+- name: SSO via rostering provider
+  type: federated
+  providers:
+  - Clever
+  - ClassLink
+  - Google Classroom
+  - Canvas
+  - Schoology
+  - Microsoft Teams
+  source: https://get.kiddom.co/rostering-and-integrations/
+  detail: >-
+    End users sign in at https://app.kiddom.co/login through the district's SSO provider. Clever
+    and ClassLink also drive automated rostering; per the help center, neither supports grade
+    passback to an LMS, which requires rostering through the LMS itself.
+- name: Manual accounts and class codes
+  type: password
+  source: https://support.kiddom.co/en/articles/14724758-where-is-my-class-code
+  detail: 'Fallback for districts without an SSO/rostering integration: manual accounts, CSV bulk upload, class codes.'
+absent:
+- api_keys: 'No API key issuance, developer portal, or key management surface exists.'
+- oauth2: '/oauth/token and /oauth/authorize return 404 on api.kiddom.co.'
+- oidc_discovery: '/.well-known/openid-configuration returns 404 on every Kiddom host.'
+- mtls: 'Not documented.'

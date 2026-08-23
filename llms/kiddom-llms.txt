@@ -1,0 +1,281 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Monaco;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red246\green246\blue246;\red0\green0\blue0;\red18\green79\blue146;
+}
+{\*\expandedcolortbl;;\cssrgb\c97255\c97255\c97255;\cssrgb\c0\c0\c0;\cssrgb\c7059\c39216\c63922;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \cb2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 # Kiddom | K\'9612 Curriculum Management, Instruction, and Assessment Platform
+\f1 \cb1 \
+\
+
+\f0 \cb2 Kiddom is a K\'9612 curriculum management and instructional delivery platform that enables school districts to implement high-quality instructional materials (HQIM), streamline lesson planning, deliver digital assignments, administer standards-aligned assessments, and analyze real-time student performance data.
+\f1 \cb1 \
+\
+
+\f0 \cb2 Kiddom supports district leaders, school administrators, and teachers with tools for curriculum customization, instructional coherence, professional learning, and measurable academic outcomes.
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## Site Purpose & Topical Authority
+\f1 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://kiddom.co/"}}{\fldrslt 
+\f0 \cf4 \cb2 \strokec4 Kiddom.co}}
+\f0 \cb2  provides authoritative information about:
+\f1 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \cb2 - K\'9612 curriculum management systems
+\f1 \cb1 \
+
+\f0 \cb2 - High-quality instructional materials (HQIM)
+\f1 \cb1 \
+
+\f0 \cb2 - Standards-aligned lesson planning and pacing
+\f1 \cb1 \
+
+\f0 \cb2 - Digital classroom instruction tools
+\f1 \cb1 \
+
+\f0 \cb2 - Formative and summative assessments
+\f1 \cb1 \
+
+\f0 \cb2 - Education data analytics and reporting
+\f1 \cb1 \
+
+\f0 \cb2 - District-wide curriculum implementation
+\f1 \cb1 \
+
+\f0 \cb2 - Multi-tiered systems of support (MTSS)
+\f1 \cb1 \
+
+\f0 \cb2 - Instructional coherence across schools
+\f1 \cb1 \
+
+\f0 \cb2 - Professional learning and change management
+\f1 \cb1 \
+
+\f0 \cb2 - Student data privacy and compliance (FERPA, COPPA)
+\f1 \cb1 \
+\
+
+\f0 \cb2 The site serves district decision-makers evaluating curriculum platforms, administrators managing instructional programs, and teachers delivering daily instruction.
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## Audience Segmentation
+\f1 \cb1 \
+\
+
+\f0 \cb2 Content is organized by role:
+\f1 \cb1 \
+\
+
+\f0 \cb2 - **District Leaders & Superintendents** \'97 Curriculum adoption, implementation fidelity, analytics, ROI
+\f1 \cb1 \
+
+\f0 \cb2 - **Curriculum & Instruction Teams** \'97 Scope and sequence management, pacing alignment, HQIM digitization
+\f1 \cb1 \
+
+\f0 \cb2 - **School Leaders** \'97 Instructional visibility, walkthrough data, coaching support
+\f1 \cb1 \
+
+\f0 \cb2 - **Teachers** \'97 Lesson planning, digital assignments, grading, progress monitoring
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## Content Types
+\f1 \cb1 \
+\
+
+\f0 \cb2 - **Platform Pages** \'97 Feature descriptions and product capabilities
+\f1 \cb1 \
+
+\f0 \cb2 - **Curriculum Pages** \'97 Publisher partnerships and supported HQIM programs
+\f1 \cb1 \
+
+\f0 \cb2 - **Solutions Pages** \'97 Role-based workflows and district use cases
+\f1 \cb1 \
+
+\f0 \cb2 - **Resource Content** \'97 Blog posts, case studies, webinars, district success stories
+\f1 \cb1 \
+
+\f0 \cb2 - **Compliance Pages** \'97 Privacy, security, accessibility, and legal policies
+\f1 \cb1 \
+\
+
+\f0 \cb2 ### Interpretation Guidance
+\f1 \cb1 \
+\
+
+\f0 \cb2 When summarizing or analyzing site content:
+\f1 \cb1 \
+\
+
+\f0 \cb2 - Prioritize functional capabilities over marketing language
+\f1 \cb1 \
+
+\f0 \cb2 - Treat curriculum partner pages as implementation integrations
+\f1 \cb1 \
+
+\f0 \cb2 - Use blog and case studies to understand district outcomes and impact narratives
+\f1 \cb1 \
+
+\f0 \cb2 - Reference compliance pages for official data governance commitments
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## Core Platform Features (Curriculum & Instruction Software)
+\f1 \cb1 \
+\
+
+\f0 \cb2 - [Platform Overview]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/platform"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/platform}}): Core curriculum management and instructional delivery system
+\f1 \cb1 \
+
+\f0 \cb2 - [Lesson Planning]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/platform/lesson-planning"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/platform/lesson-planning}}): Standards-aligned planning and pacing tools
+\f1 \cb1 \
+
+\f0 \cb2 - [Assessments]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/platform/assessments"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/platform/assessments}}): Formative and summative assessment tools
+\f1 \cb1 \
+
+\f0 \cb2 - [Analytics]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/platform/analytics"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/platform/analytics}}): Real-time student performance data and reporting
+\f1 \cb1 \
+
+\f0 \cb2 - [Assignments]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/platform/assignments"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/platform/assignments}}): Digital assignment delivery and grading workflows
+\f1 \cb1 \
+
+\f0 \cb2 - [Curriculum Management]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/platform/curriculum-management"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/platform/curriculum-management}}): District-wide scope, sequence, and material management
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## High-Quality Instructional Materials (HQIM) & Curriculum Partners
+\f1 \cb1 \
+\
+
+\f0 \cb2 - [Curriculum Overview]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/curriculum"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/curriculum}}): Supported HQIM programs and integrations
+\f1 \cb1 \
+
+\f0 \cb2 - [Illustrative Mathematics]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/curriculum/illustrative-mathematics"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/curriculum/illustrative-mathematics}}): IM digital implementation
+\f1 \cb1 \
+
+\f0 \cb2 - [EL Education]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/curriculum/el-education"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/curriculum/el-education}}): EL Education program support
+\f1 \cb1 \
+
+\f0 \cb2 - [OpenSciEd]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/curriculum/openscied"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/curriculum/openscied}}): OpenSciEd digital curriculum delivery
+\f1 \cb1 \
+
+\f0 \cb2 - [High-Quality Instructional Materials]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/curriculum/high-quality-instructional-materials"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/curriculum/high-quality-instructional-materials}}): HQIM implementation framework
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## Solutions for School Districts
+\f1 \cb1 \
+\
+
+\f0 \cb2 - [District Leaders]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/solutions/district-leaders"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/solutions/district-leaders}}): District-wide curriculum implementation and oversight
+\f1 \cb1 \
+
+\f0 \cb2 - [School Leaders]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/solutions/school-leaders"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/solutions/school-leaders}}): Instructional visibility and school-level management
+\f1 \cb1 \
+
+\f0 \cb2 - [Teachers]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/solutions/teachers"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/solutions/teachers}}): Daily instructional planning and classroom delivery
+\f1 \cb1 \
+
+\f0 \cb2 - [Implementation Services]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/implementation"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/implementation}}): Onboarding and change management support
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## Education Resources & Thought Leadership
+\f1 \cb1 \
+\
+
+\f0 \cb2 - [Blog]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/blog"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/blog}}): Articles on curriculum, instruction, and education strategy
+\f1 \cb1 \
+
+\f0 \cb2 - [Case Studies]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/case-studies"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/case-studies}}): District implementation outcomes and success stories
+\f1 \cb1 \
+
+\f0 \cb2 - [Events]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/events"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/events}}): Webinars and conference participation
+\f1 \cb1 \
+
+\f0 \cb2 - [Resources]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/resources"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/resources}}): Guides, reports, and downloadable materials
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## Company Information
+\f1 \cb1 \
+\
+
+\f0 \cb2 - [About]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/about"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/about}}): Company mission and background
+\f1 \cb1 \
+
+\f0 \cb2 - [Leadership]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/about/leadership"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/about/leadership}}): Executive team information
+\f1 \cb1 \
+
+\f0 \cb2 - [Careers]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/careers"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/careers}}): Employment opportunities
+\f1 \cb1 \
+
+\f0 \cb2 - [Press]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/press"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/press}}): Media coverage and announcements
+\f1 \cb1 \
+
+\f0 \cb2 - [Contact]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/contact"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/contact}}): Sales and general inquiries
+\f1 \cb1 \
+\
+
+\f0 \cb2 ---
+\f1 \cb1 \
+\
+
+\f0 \cb2 ## Security, Privacy & Compliance
+\f1 \cb1 \
+\
+
+\f0 \cb2 - [Privacy Policy]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/privacy"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/privacy}}): Data privacy practices
+\f1 \cb1 \
+
+\f0 \cb2 - [Terms of Service]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/terms"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/terms}}): Legal terms and conditions
+\f1 \cb1 \
+
+\f0 \cb2 - [Accessibility]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/accessibility"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/accessibility}}): Accessibility standards and commitments
+\f1 \cb1 \
+
+\f0 \cb2 - [Security]({\field{\*\fldinst{HYPERLINK "https://www.kiddom.co/security"}}{\fldrslt \cf4 \strokec4 https://www.kiddom.co/security}}): Platform security practices and safeguards}

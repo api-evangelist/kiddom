@@ -1,0 +1,21 @@
+generated: '2026-08-23'
+method: searched
+source: https://www.kiddom.co/demo
+plan_count: 0
+currency: null
+note: >-
+  Kiddom publishes no pricing. https://www.kiddom.co/pricing returns 404 and no pricing, plans or
+  packaging page appears anywhere in the 366-URL sitemap. The commercial motion is a district
+  purchase: the site's only conversion path is a "Request a demo" form at
+  https://www.kiddom.co/demo (200), and integration/rostering questions are routed to a Kiddom
+  sales rep or customer success manager per the help center. There is no API product, no metered
+  tier, and no self-serve signup — app.kiddom.co/login is a login for provisioned district users.
+evidence:
+- url: https://www.kiddom.co/pricing
+  status: 404
+- url: https://www.kiddom.co/demo
+  status: 200
+- url: https://www.kiddom.co/sitemap.xml
+  status: 200
+  detail: '366 URLs, none matching pricing/plans/packaging'
+plans: []

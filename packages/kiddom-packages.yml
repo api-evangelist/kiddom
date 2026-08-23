@@ -1,0 +1,44 @@
+generated: '2026-08-23'
+method: searched
+source: npm, PyPI, RubyGems, crates.io registry queries + github.com/kiddom
+package_count: 1
+sdk_count: 0
+note: >-
+  Kiddom ships no client SDK for any API, because it publishes no API. One first-party package
+  exists on npm and it is an internal code-style tool, not a client library, so no SDKs pointer is
+  emitted. PyPI (kiddom, kiddom-api), RubyGems (kiddom) and crates.io return 404/no first-party
+  match; the public GitHub org's 29 repositories are forks of third-party infrastructure projects
+  plus a handful of internal utilities (a Streamlit URL shortener, a PDF-to-JSON curriculum
+  converter, a Granola notes archiver).
+packages:
+- language: javascript
+  registry: npm
+  name: eslint-plugin-kiddomstyle
+  url: https://www.npmjs.com/package/eslint-plugin-kiddomstyle
+  install: npm install eslint-plugin-kiddomstyle
+  official: true
+  is_api_client: false
+  version: 1.1.1
+  published: '2016-10-17'
+  repository: https://github.com/kiddom/eslint-plugin-kiddomstyle
+  note: >-
+    "This plugin enforces architectural choices within Kiddom's React-Redux application." An
+    internal lint ruleset, first-party but not an API client. Last published 2016-10-17 — nearly
+    ten years stale, and the source repository is no longer public in the org listing.
+registries_checked:
+- registry: npm
+  query: kiddom
+  first_party_hits: 1
+- registry: pypi
+  query: kiddom / kiddom-api
+  status: 404
+  first_party_hits: 0
+- registry: rubygems
+  query: kiddom
+  status: 404
+  first_party_hits: 0
+- registry: crates.io
+  query: kiddom
+  status: 403
+  first_party_hits: 0
+  note: 'crates.io returned 403 to the anonymous probe; no Kiddom crate is expected or referenced anywhere.'

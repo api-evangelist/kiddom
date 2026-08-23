@@ -1,0 +1,19 @@
+generated: '2026-08-23'
+method: searched
+source: https://api.kiddom.co
+limit_count: 0
+note: >-
+  No rate limits are documented, because no API reference is published. The only publicly
+  reachable endpoints (the LTI 1.3 launch pair) returned no rate-limit headers on an anonymous
+  request, and the API documentation at https://api.kiddom.co/docs is behind Cloudflare Access, so
+  any limits stated there are unreadable. Recorded as an honest zero, not an absence of limits.
+observed_headers: []
+observed:
+- url: https://api.kiddom.co/lti/login
+  status: 400
+  rate_limit_headers: none
+  detail: 'No X-RateLimit-*, RateLimit-* or Retry-After headers returned.'
+- url: https://api.kiddom.co/docs
+  status: 302
+  detail: 'Redirects to kiddomdata.cloudflareaccess.com sign-in; docs not readable anonymously.'
+limits: []

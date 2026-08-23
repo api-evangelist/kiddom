@@ -1,18 +1,59 @@
 aid: kiddom
 name: Kiddom
-description: 'Kiddom is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Kiddom is a K-12 curriculum management, instruction and assessment platform used by school
+  districts to implement high-quality instructional materials (HQIM), plan and pace lessons,
+  deliver digital assignments, administer standards-aligned assessments, and analyze student
+  performance data. The product is sold to districts rather than to developers: there is no public
+  developer program, API key, or published API reference. Kiddom's public machine-readable surface
+  is its 1EdTech interoperability posture — it is certified as an LTI Advantage 1.3 Tool and as a
+  OneRoster 1.1 REST Data Consumer, and it rosters from Clever, ClassLink, Google Classroom, Canvas,
+  Schoology and Microsoft Teams. The only publicly reachable API endpoints are the LTI 1.3 launch
+  pair on api.kiddom.co; the API documentation at api.kiddom.co/docs sits behind Cloudflare Access.
+image: https://cdn.prod.website-files.com/66e9f6c87b37d1a3552bd9b6/6a34797390dfc8ead8d6428a_Webflow_ShareImage%402x.png
 url: https://raw.githubusercontent.com/api-evangelist/kiddom/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-source-url: https://forgeglobal.com/kiddom_stock/
 specificationVersion: '0.20'
 created: '2026-08-23'
 modified: '2026-08-23'
 tags:
-- Company
-apis: []
+- Education
+- K-12
+- Curriculum
+- Learning Management
+- Assessment
+- EdTech
+- Rostering
+- Interoperability
+- LTI
+- OneRoster
+- Analytics
+apis:
+- aid: kiddom:lti
+  name: Kiddom LTI 1.3 Tool Endpoints
+  description: >-
+    Kiddom is a certified 1EdTech LTI Advantage 1.3 Tool (Assignment and Grade Services 2.0, Names
+    and Role Provisioning Services 2.0, Deep Linking 2.0). The publicly reachable surface is the
+    OIDC third-party-initiated login endpoint and the launch/redirect endpoint on api.kiddom.co,
+    which an LMS platform (Canvas, Schoology, Google Classroom, Microsoft Teams) calls during a
+    launch. Both answer an HTTP 400 JSON error to an unparameterized request, confirming they are
+    live handlers rather than a catch-all. Per-district client_id, deployment_id and key-set values
+    are provisioned by Kiddom support and are not published.
+  humanURL: https://get.kiddom.co/rostering-and-integrations/
+  baseURL: https://api.kiddom.co
+  tags:
+  - LTI
+  - Rostering
+  - Education
+  properties:
+  - type: Documentation
+    url: https://support.kiddom.co/en/collections/19663428-rostering-and-integrations
+  - type: Authentication
+    url: authentication/kiddom-authentication.yml
+  - type: Conformance
+    url: conformance/kiddom-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -20,4 +61,64 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/kiddom_stock/
+  url: https://www.kiddom.co/
+- type: Documentation
+  url: https://support.kiddom.co/en/collections/19663428-rostering-and-integrations
+- type: Support
+  url: https://support.kiddom.co/en/
+- type: Blog
+  url: https://www.kiddom.co/insights
+- type: GitHubOrganization
+  url: https://github.com/kiddom
+- type: StatusPage
+  url: https://status.kiddom.co/
+- type: Login
+  url: https://app.kiddom.co/login
+- type: TermsOfService
+  url: https://www.kiddom.co/tos
+- type: PrivacyPolicy
+  url: https://www.kiddom.co/privacy
+- type: Compliance
+  url: https://site.imsglobal.org/certifications/kiddom-inc/kiddom
+- type: LLMsTxt
+  url: llms/kiddom-llms.txt
+- type: Conformance
+  url: conformance/kiddom-conformance.yml
+- type: Lifecycle
+  url: lifecycle/kiddom-lifecycle.yml
+- type: Authentication
+  url: authentication/kiddom-authentication.yml
+- type: DomainSecurity
+  url: security/kiddom-domain-security.yml
+- type: Packages
+  url: packages/kiddom-packages.yml
+- type: Plans
+  url: plans/kiddom-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/kiddom-rate-limits.yml
+- type: DataModel
+  url: data-model/kiddom-data-model.yml
+
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 11
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: partner-login
+  detail: >-
+    Kiddom runs a real API host — api.kiddom.co answers live LTI 1.3 launch traffic — but its API
+    documentation at https://api.kiddom.co/docs 302s to a Cloudflare Access sign-in at
+    kiddomdata.cloudflareaccess.com, and no OpenAPI, GraphQL SDL, AsyncAPI, MCP server or agent
+    card is served on any Kiddom host.
+  evidence:
+    - url: https://api.kiddom.co/docs
+      status: 302
+    - url: https://api.kiddom.co/openapi.json
+      status: 404
+    - url: https://api.kiddom.co/lti/login
+      status: 400
+    - url: https://www.kiddom.co/.well-known/api-catalog
+      status: 404
+  checked: '2026-08-23'

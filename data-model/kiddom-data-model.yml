@@ -1,0 +1,119 @@
+generated: '2026-08-23'
+method: derived
+source: https://raw.githubusercontent.com/kiddom/open-academic-format/master/versions/00/oaf-00.md
+note: >-
+  Derived from Kiddom's own published draft specification, the Open Academic Format (OAF) v0.0,
+  open-sourced at github.com/kiddom/open-academic-format — NOT from an API contract, because
+  Kiddom publishes none. OAF is Kiddom's interoperable file format for describing academic content
+  (curriculum, materials, assessments) for distribution, import and export. The repository is
+  archived and the draft carries TODO sections (Definitions, Table of Contents, Introduction, and
+  empty Note/Scoring/Scheme/Band structures), so read this as the shape Kiddom modelled its content
+  domain in, not as a live contract. No Kiddom endpoint is documented as producing or consuming OAF.
+specification:
+  name: Open Academic Format
+  version: '0.0'
+  status: draft
+  copyright: 'Copyright (C) 2019 Kiddom, Inc.'
+  license: GNU General Public License v3.0 or later (stated in the spec text)
+  repository: https://github.com/kiddom/open-academic-format
+  archived: true
+identifiers:
+  scheme: IRI (RFC 3987), restricted to the `urn` and `https` protocols
+  optional_id: 'Every structure (unless noted) MUST allow an optional `id`.'
+  optional_ref: 'Every structure (unless noted) MUST allow an optional `ref` resolving to a previously defined `id`, or a public IRI.'
+  observed_urn_namespaces:
+  - urn:kiddom.co:asset:<uuid>
+  - urn:grade:<value>
+  - urn:subject:<slug>
+  - urn:skill:<standard-code>
+  - urn:curriculum:<slug>
+  - urn:unit:<slug>
+  - urn:assessment:<id>
+  - urn:question:<id>
+  - urn:answer:<id>
+  - urn:type:<homework|paper|quiz|video|question|answer>
+  - urn:format:<doc|docx|pdf>
+entities:
+- name: Summary
+  group: base
+  cardinality: exactly one, at the top of the file
+  has_id: false
+  fields: [authors, date, languages, title, version, organization]
+  rules:
+  - 'date MUST be RFC 3339 compliant.'
+  - 'The first entry in languages SHALL be the default.'
+  - 'All authors MUST be displayed when requested.'
+- name: Asset
+  group: base
+  fields: [id, url]
+- name: Grade
+  group: base
+  fields: [id, names, value]
+  note: 'names is a locale map (en-US, fr-CA, es-MX).'
+- name: MediaType
+  group: base
+  fields: [category, content_type, name]
+- name: Note
+  group: base
+  fields: []
+  note: 'Declared but left empty in the v0.0 draft.'
+- name: Rubric
+  group: base
+  fields: [name, description, criteria]
+  note: 'criteria[] each carry name + levels[] of {value, description}.'
+- name: Scoring
+  group: base
+  fields: []
+  note: 'Declared with empty JSON in the draft, along with its Scheme and Band sub-structures.'
+- name: Skill
+  group: base
+  fields: [id, name, type, subtype, grades]
+  note: 'Standards-aligned; the example uses the Common Core code K.CC.1.'
+- name: Subject
+  group: base
+  fields: [id, names, parent]
+- name: Course
+  group: curriculum
+  fields: [name, grades, subjects, curriculums]
+- name: Curriculum
+  group: curriculum
+  fields: [id, name, units]
+- name: Unit
+  group: curriculum
+  fields: [id, name, description, skills]
+- name: Assessment
+  group: assessment
+  fields: [id, type, name, description, formats, assets, questions]
+  variants: [homework, paper, video, quiz]
+  note: 'One structure with a `type` IRI; formats/assets/questions appear per variant.'
+- name: Question
+  group: assessment
+  fields: [id, type, name, description, answers, solution, assets]
+- name: Answer
+  group: assessment
+  fields: [id, type, name, description]
+- name: Type
+  group: assessment
+  fields: [id, name, description]
+  rules:
+  - 'Implementors MUST NOT restrict to known types.'
+  - 'urn:type:homework, urn:type:paper, urn:type:quiz and urn:type:video SHALL always be available.'
+relationships:
+- {from: Course, to: Grade, kind: has_many, via: grades}
+- {from: Course, to: Subject, kind: has_many, via: subjects}
+- {from: Course, to: Curriculum, kind: has_many, via: curriculums}
+- {from: Curriculum, to: Unit, kind: has_many, via: units}
+- {from: Unit, to: Skill, kind: has_many, via: skills}
+- {from: Skill, to: Grade, kind: has_many, via: grades}
+- {from: Subject, to: Subject, kind: belongs_to, via: parent}
+- {from: Assessment, to: Type, kind: belongs_to, via: type}
+- {from: Assessment, to: Question, kind: has_many, via: questions}
+- {from: Assessment, to: Asset, kind: has_many, via: assets}
+- {from: Question, to: Answer, kind: has_many, via: answers}
+- {from: Question, to: Answer, kind: has_one, via: solution}
+- {from: Question, to: Asset, kind: has_many, via: assets}
+- {from: any, to: any, kind: belongs_to, via: ref}
+coverage_caveat: >-
+  Note, Scoring, Scheme and Band are declared in the draft with empty JSON bodies; their fields are
+  recorded as empty rather than guessed. Field lists come verbatim from the draft's JSON examples,
+  which are illustrative rather than a schema — OAF ships no JSON Schema.

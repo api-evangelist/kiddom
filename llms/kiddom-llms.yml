@@ -1,0 +1,69 @@
+generated: '2026-08-23'
+method: searched
+source: https://www.kiddom.co/llms.txt
+file: kiddom-llms.txt
+http_status: 200
+content_type: text/plain; charset=utf-8
+bytes: 10705
+note: >-
+  Kiddom does publish an llms.txt, saved here verbatim. Two defects are recorded rather than
+  repaired, because the artifact is the provider's.
+defects:
+- id: served-as-rtf
+  detail: >-
+    The bytes served at https://www.kiddom.co/llms.txt are a Rich Text Format document
+    ("{\rtf1\ansi\ansicpg1252\cocoartf2868 ...", RTF version 1, ANSI, code page 1252), not
+    markdown. It was authored in a rich-text editor and uploaded without saving as plain text.
+    The Content-Type header still says text/plain, so an agent fetching it receives RTF control
+    words interleaved with the prose, and em dashes/en dashes appear as \'97 / K\'9612 escapes.
+- id: dead-links
+  detail: >-
+    21 of the 29 URLs the document advertises return HTTP 404 on the live site. The whole
+    /platform/* and /solutions/* trees it points at do not exist, and neither do /about,
+    /careers, /events, /accessibility, /security, /implementation, or the four /curriculum/*
+    program pages. The file describes an earlier information architecture than the one Webflow
+    currently serves.
+link_liveness:
+  checked: '2026-08-23'
+  total: 29
+  live: 8
+  dead: 21
+  note_redirect: http://kiddom.co/ 301s to https://www.kiddom.co/ and is counted live
+  live_urls:
+  - https://www.kiddom.co/blog
+  - https://www.kiddom.co/case-studies
+  - https://www.kiddom.co/contact
+  - https://www.kiddom.co/curriculum
+  - https://www.kiddom.co/press
+  - https://www.kiddom.co/privacy
+  - https://www.kiddom.co/resources
+  - http://kiddom.co/
+  dead_urls:
+  - https://www.kiddom.co/about
+  - https://www.kiddom.co/about/leadership
+  - https://www.kiddom.co/accessibility
+  - https://www.kiddom.co/careers
+  - https://www.kiddom.co/curriculum/el-education
+  - https://www.kiddom.co/curriculum/high-quality-instructional-materials
+  - https://www.kiddom.co/curriculum/illustrative-mathematics
+  - https://www.kiddom.co/curriculum/openscied
+  - https://www.kiddom.co/events
+  - https://www.kiddom.co/implementation
+  - https://www.kiddom.co/platform
+  - https://www.kiddom.co/platform/analytics
+  - https://www.kiddom.co/platform/assessments
+  - https://www.kiddom.co/platform/assignments
+  - https://www.kiddom.co/platform/curriculum-management
+  - https://www.kiddom.co/platform/lesson-planning
+  - https://www.kiddom.co/security
+  - https://www.kiddom.co/solutions/district-leaders
+  - https://www.kiddom.co/solutions/school-leaders
+  - https://www.kiddom.co/solutions/teachers
+  - https://www.kiddom.co/terms
+  note: >-
+    The terms-of-service URL the file advertises (/terms) 404s; the live terms page is /tos.
+mentions_no_api: true
+api_content: >-
+  The document contains no API, developer, endpoint, specification or integration section. It is
+  an SEO/AI-visibility summary of the marketing site, aimed at agents summarizing Kiddom the
+  product, not at agents calling Kiddom the API.

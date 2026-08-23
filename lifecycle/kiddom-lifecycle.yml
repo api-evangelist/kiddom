@@ -1,0 +1,37 @@
+generated: '2026-08-23'
+method: searched
+source: https://status.kiddom.co/
+versioning:
+  scheme: none-published
+  detail: >-
+    No API versioning policy is published. The 1EdTech registry names the certified product
+    "Kiddom v1"; the LTI endpoints carry no version segment (/lti/login, /lti/launch).
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  detail: >-
+    No deprecation or sunset policy found on kiddom.co, the help center, or the status page. No
+    Deprecation pointer is emitted.
+sla:
+  url: null
+  uptime_target: null
+  detail: 'No public SLA or uptime commitment; districts contract privately.'
+status_page:
+  url: https://status.kiddom.co/
+  status: 200
+  created: '2025-02-25'
+  headline: Everything is running smoothly
+  subscriptions:
+  - email
+  - slack
+  - webhook
+  detail: >-
+    A real hosted status page (status_page_id PWZWTJ3), live since 2025-02-25, offering email,
+    Slack and webhook subscriptions and a 7-day service uptime window.
+changelog:
+  url: null
+  detail: >-
+    No dated changelog or release-notes surface. The help center publishes feature articles with
+    "Updated N weeks ago" stamps but no version history, so no ChangeLog artifact or pointer is
+    emitted.
+deprecated_operations: []

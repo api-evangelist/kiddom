@@ -1,0 +1,27 @@
+generated: '2026-08-23'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.kiddom.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 14 23:51:03 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: get.kiddom.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 24 02:30:09 2026 GMT
+  hsts: null
+- host: api.kiddom.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 21 18:37:45 2026 GMT
+  hsts: null
+domains:
+- domain: kiddom.co
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
