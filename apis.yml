@@ -10,6 +10,17 @@ description: >-
   OneRoster 1.1 REST Data Consumer, and it rosters from Clever, ClassLink, Google Classroom, Canvas,
   Schoology and Microsoft Teams. The only publicly reachable API endpoints are the LTI 1.3 launch
   pair on api.kiddom.co; the API documentation at api.kiddom.co/docs sits behind Cloudflare Access.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/66e9f6c87b37d1a3552bd9b6/6a34797390dfc8ead8d6428a_Webflow_ShareImage%402x.png
 url: https://raw.githubusercontent.com/api-evangelist/kiddom/refs/heads/main/apis.yml
 x-type: company
