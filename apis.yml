@@ -21,6 +21,21 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  probe_state: gated
+  source:
+  - authentication
+  - rate-limits
+  - security
+  generated: '2026-09-03'
+  method: derived
 image: https://cdn.prod.website-files.com/66e9f6c87b37d1a3552bd9b6/6a34797390dfc8ead8d6428a_Webflow_ShareImage%402x.png
 url: https://raw.githubusercontent.com/api-evangelist/kiddom/refs/heads/main/apis.yml
 x-type: company
