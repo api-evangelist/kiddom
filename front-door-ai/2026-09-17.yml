@@ -1,0 +1,26 @@
+# Front Door AI Index — kiddom — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: kiddom
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.kiddom.co
+  final_host: www.kiddom.co
+  ownership: own
+  owner: kiddom
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 3
+  host_score: 3
+  density: 4.53
+  words: 662
+  tiers:
+    agentic: 0
+    core: 3
+    model: 0
+  ambiguous: 6
+  top_terms:
+    intelligence: 6
+    AI: 3
